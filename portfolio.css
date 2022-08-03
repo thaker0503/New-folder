@@ -1,0 +1,66 @@
+body{
+    overflow: hidden;
+}
+.homepage { 
+	background-color:rgba(247.00000047683716, 247.00000047683716, 247.00000047683716, 1);
+	width:1440px;
+    margin: 0px 40px;
+	height:1024px;
+	position:relative;
+    animation: FadeIn ease 10s ;
+}
+
+.navbar{ 
+	width:1116px;
+	height:70px;
+	position:absolute;
+	left:162px;
+	top:10px;
+}
+.ioannis_chalellis { 
+	color:rgba(51.00000075995922, 51.00000075995922, 51.00000075995922, 1);
+	width:234px;
+	height:106.52173614501953px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Allison;
+	text-align:left;
+	font-size:55px;
+	letter-spacing:0;
+}
+.portfolio { 
+	color:rgba(51.00000075995922, 51.00000075995922, 51.00000075995922, 1);
+	width:62px;
+	height:21.30434799194336px;
+	position:absolute;
+	left:983px;
+	top:43.00029754638672px;
+	font-family:Firme-Book;
+	text-align:left;
+	font-size:16px;
+	letter-spacing:0;
+	line-height: 0px;
+    cursor: pointer;
+}
+.portfolio ,.about {
+    text-decoration: none;
+    color:rgba(51.00000075995922, 51.00000075995922, 51.00000075995922, 1);
+    cursor: pointer;
+}
+.about { 
+	color:rgba(51.00000075995922, 51.00000075995922, 51.00000075995922, 1);
+	width:47px;
+	height:21.30434799194336px;
+	position:absolute;
+	left:1065px;
+	top:43.00029754638672px;
+	font-family:Firme-Book;
+	text-align:left;
+	font-size:16px;
+	letter-spacing:0;
+	line-height: 0px;
+    cursor: pointer;
+}
+
+

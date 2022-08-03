@@ -1,0 +1,141 @@
+body{
+    overflow: hidden;
+}
+.container { 
+	background-color:rgba(247.00000047683716, 247.00000047683716, 247.00000047683716, 1);
+	width:1440px;
+	height:1024px;
+	position:absolute;
+    margin: 0px 40px;
+    animation: fadeOut ease 10s forwards;
+}
+.container-bg{ 
+	background-image: url(./images/Group\ 69_red.svg);
+	width:300px;
+	height:513.6239013671875px;
+	position:absolute;
+	left:570px;
+	top:81px;
+
+}
+.based_in_liverpool { 
+	color:rgba(200.00000327825546, 16.000000946223736, 46.000001057982445, 1);
+	width:623px;
+	height:61px;
+	position:absolute;
+	left:162px;
+	top:213px;
+	font-family:Firme-Thin;
+	text-align:left;
+	font-size:60px;
+	letter-spacing:0;
+	line-height: 25px;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+      
+    }
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100% {
+      z-index: -1;
+    }
+  }
+
+
+
+.homepage { 
+	background-color:rgba(247.00000047683716, 247.00000047683716, 247.00000047683716, 1);
+	width:1440px;
+    margin: 0px 40px;
+	height:1024px;
+	position:absolute;
+    animation: FadeIn ease 10s ;
+}
+.container-bg-2 { 
+	
+	width:300px;
+	height:513.6239013671875px;
+	position:absolute;
+	left:570px;
+	top:81px;
+    background-image: url(./images/Group\ 69.svg);
+}
+.header_content{ 
+	color:rgba(17.00000088661909, 17.00000088661909, 17.00000088661909, 1);
+	width:1116px;
+	height:470px;
+	position:absolute;
+	left:162px;
+	top:141px;
+	font-family:Firme-Thin;
+	text-align:left;
+	font-size:60px;
+	letter-spacing:0;
+	line-height:px;
+}
+.navbar{ 
+	width:1116px;
+	height:70px;
+	position:absolute;
+	left:162px;
+	top:10px;
+}
+.ioannis_chalellis { 
+	color:rgba(51.00000075995922, 51.00000075995922, 51.00000075995922, 1);
+	width:234px;
+	height:106.52173614501953px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Allison;
+	text-align:left;
+	font-size:55px;
+	letter-spacing:0;
+}
+.portfolio { 
+	color:rgba(51.00000075995922, 51.00000075995922, 51.00000075995922, 1);
+	width:62px;
+	height:21.30434799194336px;
+	position:absolute;
+	left:983px;
+	top:43.00029754638672px;
+	font-family:Firme-Book;
+	text-align:left;
+	font-size:16px;
+	letter-spacing:0;
+	line-height: 0px;
+    cursor: pointer;
+}
+.portfolio ,.about {
+    text-decoration: none;
+    color:rgba(51.00000075995922, 51.00000075995922, 51.00000075995922, 1);
+    cursor: pointer;
+}
+.about { 
+	color:rgba(51.00000075995922, 51.00000075995922, 51.00000075995922, 1);
+	width:47px;
+	height:21.30434799194336px;
+	position:absolute;
+	left:1065px;
+	top:43.00029754638672px;
+	font-family:Firme-Book;
+	text-align:left;
+	font-size:16px;
+	letter-spacing:0;
+	line-height: 0px;
+    cursor: pointer;
+}
+
+
