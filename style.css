@@ -7,13 +7,13 @@ body{
 	overflow: hidden;
 	background-color:rgba(247.00000047683716, 247.00000047683716, 247.00000047683716, 1);
 }
-.container { 
+#container { 
 	background-color:rgba(247.00000047683716, 247.00000047683716, 247.00000047683716, 1);
 	width:1440px;
 	height:1024px;
 	position:absolute;
+	display: none;
     margin: 0px 40px;
-    animation: fadeOut ease 10s forwards 5s;
 }
 .container-bg{ 
 	background-image: url(./images/Group\ 69_red.svg);
@@ -36,6 +36,7 @@ body{
 	font-size:60px;
 	letter-spacing:0;
 	line-height: 25px;
+	
 }
 
 @keyframes fadeIn {
@@ -61,13 +62,13 @@ body{
 
 
 
-.homepage { 
+#homepage { 
 	background-color:rgba(247.00000047683716, 247.00000047683716, 247.00000047683716, 1);
 	width:1440px;
     margin: 0px 40px;
 	height:1024px;
 	position:absolute;
-    animation: FadeIn ease-in 10s 5s;
+	display: none;
 }
 .container-bg-2 { 
 	

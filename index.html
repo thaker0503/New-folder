@@ -6,19 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Firme-Thin&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Allison&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Firme-Book&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Firme-Thin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Firme-Book&display=swap" rel="stylesheet"> -->
     <script>
         window.onload = function() {
-            move()
-
+            move() 
         };
     </script>
 </head>
 <body>
     
-    <div class=homepage>
+    <div id=homepage>
         <div class="container-bg-2">
           
         </div>
@@ -33,7 +32,7 @@
             <a href="./about.html" class="about"><span>About</span></a>
         </div>
     </div>
-    <div class="container">
+    <div id="container">
         <div class="container-bg">
         </div>
         <span  class="based_in_liverpool">Based in Liverpool</span>
@@ -84,19 +83,29 @@
                 if(width == 72){text4.style.display = "none";}
                 if(width == 80){text5.style.display = "block";}
                 if(width == 96){text5.style.display = "none";}
-                setInterval(function () {
+                
                     if(width == 100){
+                        
                         main.style.display = "none";
+                        // cont.style.display = "block";
                         main.style.zIndex = "-10";
                         text5.style.zIndex = "-9";
                         text4.style.zIndex = "-8";
                         text3.style.zIndex = "-7";
                         text2.style.zIndex = "-6";
+                        anim();
                     }
-                }, 2000);
+                
               }
             }
           }
+        }
+
+        function anim() {
+            document.getElementById('container').style.animation = "fadeOut ease 10s forwards 2s";
+            document.getElementById('container').style.display = "block";
+            document.getElementById('homepage').style.animation = "FadeIn ease-in 10s";
+            document.getElementById('homepage').style.display = "block";
         }
 
         
