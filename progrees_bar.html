@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function() {
+            move()
+
+        };
+    </script>
+    <style>
+        body{
+            background-color: white;
+        }
+        #progress{
+            box-shadow: 8px 8px 8px rgb(0 0 0 / 25%);
+            width: 500px;
+            height: 20px;
+            position: absolute;
+            /* left: 470px;
+            top: 500px; */
+            border-radius: 15px;
+            filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.25));
+            border: 3px solid rgba(218, 218, 218, 1)
+            
+            
+        }
+        
+        #progress-value{
+            box-shadow: 8px 8px 8px rgb(0 0 0 / 25%);
+            background-color: rgba(119.00000050663948, 119.00000050663948, 119.00000050663948, 1);
+            width: 0%;
+            height: 20px;
+            position: relative;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+           
+        }
+        @keyframes load {   
+            0%{width: 0;}
+            8%,24%{width: 24%;}
+            32%,48%{width: 48%;}
+            56%,72%{width:72%}
+            80%,96%{width: 96%;}
+            100%{width:100%}
+            
+        }
+        /* @keyframes fadeOut {
+            0% {
+            opacity:1;
+            }
+            50%{
+                opacity: 0;
+            }
+            100% {
+            z-index: -2;
+            }
+        } */
+        #progress-bar{
+            /* animation: fadeOut ease 10s forwards; */
+            /* text-align: center; */
+            left: 515px;
+            top: 50px;
+            position: absolute;
+        }
+        #percentage{
+            position: relative;
+            left: 190px;
+            font-size: 60px;
+            line-height: 65px;
+            font-weight: 100;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            margin-top: 30vh;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="progress-bar">
+        <div id="percentage">
+            10%
+        </div>
+        <div id="progress">
+    
+            <div id="progress-value"></div>
+        </div>
+    </div>
+
+    <script>
+        var i = 0;
+        function move() {
+          if (i == 0) {
+            i = 1;
+            var elem = document.getElementById("progress-value");
+            var percentage = document.getElementById("percentage");
+            var width = 10;
+            var id = setInterval(frame, 100);
+            function frame() {
+              if (width >= 100) {
+                clearInterval(id);
+                i = 0;
+              } else {
+                width++;
+                elem.style.width = width + "%";
+                percentage.innerHTML = width  + "%";
+              }
+            }
+          }
+        }
+
+        function fadeOut(){
+            var s = document.getElementById("percentage-bar").style;
+            s.opacity = 1;
+            (function fade(){(s.opacity-=.1)<0?s.display="none":setTimeout(fade,400)})();
+        }
+
+        function fadeOutEffect() {
+            var fadeTarget = document.getElementById("target");
+            var fadeEffect = setInterval(function () {
+                if (!fadeTarget.style.opacity) {
+                    fadeTarget.style.opacity = 1;
+                }
+                if (fadeTarget.style.opacity > 0) {
+                    fadeTarget.style.opacity -= 0.1;
+                } else {
+                    clearInterval(fadeEffect);
+                }
+            }, 200);
+        }
+        </script>
+</body>
+</html>
