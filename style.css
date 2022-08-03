@@ -13,7 +13,7 @@ body{
 	height:1024px;
 	position:absolute;
     margin: 0px 40px;
-    animation: fadeOut ease 10s forwards;
+    animation: fadeOut ease 10s forwards 5s;
 }
 .container-bg{ 
 	background-image: url(./images/Group\ 69_red.svg);
@@ -67,7 +67,7 @@ body{
     margin: 0px 40px;
 	height:1024px;
 	position:absolute;
-    animation: FadeIn ease 10s ;
+    animation: FadeIn ease-in 10s 5s;
 }
 .container-bg-2 { 
 	
@@ -144,4 +144,59 @@ body{
     cursor: pointer;
 }
 
+#progress{
+	box-shadow: 8px 8px 8px rgb(0 0 0 / 25%);
+	width: 500px;
+	height: 20px;
+	position: absolute;
+	/* left: 470px;
+	top: 500px; */
+	border-radius: 15px;
+	filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.25));
+	border: 3px solid rgba(218, 218, 218, 1)
+	
+	
+}
 
+#progress-value{
+	box-shadow: 8px 8px 8px rgb(0 0 0 / 25%);
+	background-color: rgba(119.00000050663948, 119.00000050663948, 119.00000050663948, 1);
+	width: 0%;
+	height: 20px;
+	position: relative;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+   
+}
+
+
+#progress-bar{
+	left: 515px;
+	top: 50px;
+	position: absolute;
+	display: block;
+}
+#percentage{
+	position: relative;
+	left: 190px;
+	font-size: 60px;
+	line-height: 65px;
+	font-weight: 100;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
+	margin-top: 30vh;
+	margin-bottom: 20px;
+}
+#prt-1,#prt-2,#prt-3,#prt-4,#prt-5{
+	font-size: 60px;
+	line-height: 70.31px;
+	width: 100%;
+	height: 72px;
+	text-align: center;
+	margin-top: 15vh;
+	margin-bottom: 15vh;
+	display: none;
+	position: absolute;
+}

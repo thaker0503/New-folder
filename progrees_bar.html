@@ -47,6 +47,7 @@
             left: 515px;
             top: 50px;
             position: absolute;
+            display: block;
         }
         #percentage{
             position: relative;
@@ -59,9 +60,25 @@
             margin-top: 30vh;
             margin-bottom: 20px;
         }
+        #prt-1,#prt-2,#prt-3,#prt-4,#prt-5{
+            font-size: 60px;
+            line-height: 70.31px;
+            width: 100%;
+            height: 72px;
+            text-align: center;
+            margin-top: 15vh;
+            margin-bottom: 15vh;
+            display: none;
+            
+        }
     </style>
 </head>
 <body>
+
+    <div id="prt-1">Designed for web and mobile</div>
+    <div id="prt-2">Saved clients thousands  of pounds</div>
+    <div id="prt-3">Increased conversion rates up to 25%</div>
+    <div id="prt-4">Reduced users complaints  65% </div>
 
     <div id="progress-bar">
         <div id="percentage">
@@ -80,8 +97,13 @@
             i = 1;
             var elem = document.getElementById("progress-value");
             var percentage = document.getElementById("percentage");
-            var width = 10;
-            var id = setInterval(frame, 100);
+            var text5 = document.getElementById("prt-1");
+            var text4 = document.getElementById("prt-2");
+            var text3 = document.getElementById("prt-3");
+            var text2 = document.getElementById("prt-4");
+            var main = document.getElementById("progress-bar");
+            var width = 0;
+            var id = setInterval(frame, 80);
             function frame() {
               if (width >= 100) {
                 clearInterval(id);
@@ -90,30 +112,30 @@
                 width++;
                 elem.style.width = width + "%";
                 percentage.innerHTML = width  + "%";
+                if(width == 8){text2.style.display = "block";}
+                if(width == 24){text2.style.display = "none";}
+                if(width == 32){text3.style.display = "block";}
+                if(width == 48){text3.style.display = "none";}
+                if(width == 56){text4.style.display = "block";}
+                if(width == 72){text4.style.display = "none";}
+                if(width == 80){text5.style.display = "block";}
+                if(width == 96){text5.style.display = "none";}
+                setInterval(function () {
+                    if(width == 100){
+                        main.style.display = "none";
+                        main.style.zIndex = "-10";
+                        text5.style.zIndex = "-9";
+                        text4.style.zIndex = "-8";
+                        text3.style.zIndex = "-7";
+                        text2.style.zIndex = "-6";
+                    }
+                }, 2000);
               }
             }
           }
         }
 
-        function fadeOut(){
-            var s = document.getElementById("percentage-bar").style;
-            s.opacity = 1;
-            (function fade(){(s.opacity-=.1)<0?s.display="none":setTimeout(fade,400)})();
-        }
-
-        function fadeOutEffect() {
-            var fadeTarget = document.getElementById("target");
-            var fadeEffect = setInterval(function () {
-                if (!fadeTarget.style.opacity) {
-                    fadeTarget.style.opacity = 1;
-                }
-                if (fadeTarget.style.opacity > 0) {
-                    fadeTarget.style.opacity -= 0.1;
-                } else {
-                    clearInterval(fadeEffect);
-                }
-            }, 200);
-        }
+        
         </script>
 </body>
 </html>
