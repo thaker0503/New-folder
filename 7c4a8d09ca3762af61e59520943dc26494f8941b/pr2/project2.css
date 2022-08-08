@@ -2886,6 +2886,8 @@
 	text-align:left;
 	font-size:55px;
 	letter-spacing:0;
+    cursor: pointer;
+	text-decoration: none;
 }
 .portfolio { 
 	color:rgba(51.00000075995922, 51.00000075995922, 51.00000075995922, 1);
