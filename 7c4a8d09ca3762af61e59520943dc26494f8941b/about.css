@@ -1,0 +1,115 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+body{
+	overflow: hidden;
+	background-color:rgba(247.00000047683716, 247.00000047683716, 247.00000047683716, 1);
+}
+.homepage { 
+	background-color:rgba(247.00000047683716, 247.00000047683716, 247.00000047683716, 1);
+	width:1440px;
+    margin: 0px 40px;
+	height:1024px;
+	position:absolute;
+}
+
+.heading{
+	position: absolute;
+	height: 24px;
+	width: 138px;
+	left: 657px;
+	top: 125px;
+	border-radius: undefinedpx;
+	font-family: Firme-Book;
+	font-size: 36px;
+	line-height: 24px;
+	letter-spacing: 0px;
+	text-align: left;
+}
+#layer1{
+	height: 272px;
+	width: 272px;
+	left: 162px;
+	top: 200px;
+	border-radius: 50%;
+	position: absolute;
+	background-color: gray;
+	opacity: 1;
+}
+.meround_1 { 
+	height: 272px;
+	width: 272px;
+	border-radius: 0px;
+	background-image:url(images/meround_1.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	position: absolute;
+	mix-blend-mode: luminosity;
+}
+.header_content{ 
+	color:rgba(17.00000088661909, 17.00000088661909, 17.00000088661909, 1);
+	width:768px;
+	height:470px;
+	position:absolute;
+	left:510px;
+	top:175px;
+	font-family:Firme-Light;
+	text-align:left;
+	font-size:24px;
+	letter-spacing:0;
+	line-height: 24px;
+}
+.navbar{ 
+	width:1116px;
+	height:70px;
+	position:absolute;
+	left:162px;
+	top:10px;
+}
+.ioannis_chalellis { 
+	color:rgba(51.00000075995922, 51.00000075995922, 51.00000075995922, 1);
+	width:234px;
+	height:106.52173614501953px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	font-family:Allison;
+	text-align:left;
+	font-size:55px;
+	letter-spacing:0;
+}
+.portfolio { 
+	color:rgba(51.00000075995922, 51.00000075995922, 51.00000075995922, 1);
+	width:62px;
+	height:21.30434799194336px;
+	position:absolute;
+	left:983px;
+	top:43.00029754638672px;
+	font-family:Firme-Book;
+	text-align:left;
+	font-size:16px;
+	letter-spacing:0;
+	line-height: 0px;
+    cursor: pointer;
+}
+.portfolio ,.about {
+    text-decoration: none;
+    color:rgba(51.00000075995922, 51.00000075995922, 51.00000075995922, 1);
+    cursor: pointer;
+}
+.about { 
+	color:rgba(51.00000075995922, 51.00000075995922, 51.00000075995922, 1);
+	width:47px;
+	height:21.30434799194336px;
+	position:absolute;
+	left:1065px;
+	top:43.00029754638672px;
+	font-family:Firme-Book;
+	text-align:left;
+	font-size:16px;
+	letter-spacing:0;
+	line-height: 0px;
+    cursor: pointer;
+}
