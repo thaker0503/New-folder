@@ -4,76 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Allison&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Firme-Thin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Firme-Book&display=swap" rel="stylesheet">
     <script>
         window.onload = function() {
-            move()
-
+            move() 
         };
     </script>
-    <style>
-        body{
-            background-color: white;
-        }
-        #progress{
-            box-shadow: 8px 8px 8px rgb(0 0 0 / 25%);
-            width: 500px;
-            height: 20px;
-            position: absolute;
-            /* left: 470px;
-            top: 500px; */
-            border-radius: 15px;
-            filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.25));
-            border: 3px solid rgba(218, 218, 218, 1)
-            
-            
-        }
-        
-        #progress-value{
-            box-shadow: 8px 8px 8px rgb(0 0 0 / 25%);
-            background-color: rgba(119.00000050663948, 119.00000050663948, 119.00000050663948, 1);
-            width: 0%;
-            height: 20px;
-            position: relative;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
-           
-        }
-        
-        
-        #progress-bar{
-            left: 515px;
-            top: 50px;
-            position: absolute;
-            display: block;
-        }
-        #percentage{
-            position: relative;
-            left: 190px;
-            font-size: 60px;
-            line-height: 65px;
-            font-weight: 100;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            text-align: center;
-            margin-top: 30vh;
-            margin-bottom: 20px;
-        }
-        #prt-1,#prt-2,#prt-3,#prt-4,#prt-5{
-            font-size: 60px;
-            line-height: 70.31px;
-            width: 100%;
-            height: 72px;
-            text-align: center;
-            margin-top: 15vh;
-            margin-bottom: 15vh;
-            display: none;
-            
-        }
-    </style>
 </head>
 <body>
+    
+    <div id=homepage>
+        <div class="container-bg-2">
+          
+        </div>
+        <span  class="header_content">
+            Ioannis Chalellis is a UX/UI Designer. <br>
+      Based in Liverpool, UK. <br>
+      Currently, working as a Lead Designer at a tech startup and mentor in  spare time. <br>
+      He is passionate about learning new things every day, developing ideas and being part of a team.</span>
+        <div class="navbar">
+            <a href="#"  class="ioannis_chalellis">Ioannis Chalellis</a>
+            <a href="./portfolio.html" class="portfolio"><span>Portfolio</span></a>
+            <a href="./about.html" class="about"><span>About</span></a>
+        </div>
+    </div>
+    <div id="container">
+        <div class="container-bg">
+        </div>
+        <span  class="based_in_liverpool">Based in Liverpool</span>
+    </div>
 
     <div id="prt-1">Designed for web and mobile</div>
     <div id="prt-2">Saved clients thousands  of pounds</div>
@@ -120,19 +83,29 @@
                 if(width == 72){text4.style.display = "none";}
                 if(width == 80){text5.style.display = "block";}
                 if(width == 96){text5.style.display = "none";}
-                setInterval(function () {
+                
                     if(width == 100){
+                        
                         main.style.display = "none";
+                        // cont.style.display = "block";
                         main.style.zIndex = "-10";
                         text5.style.zIndex = "-9";
                         text4.style.zIndex = "-8";
                         text3.style.zIndex = "-7";
                         text2.style.zIndex = "-6";
+                        anim();
                     }
-                }, 2000);
+                
               }
             }
           }
+        }
+
+        function anim() {
+            document.getElementById('container').style.animation = "fadeOut ease 10s forwards 2s";
+            document.getElementById('container').style.display = "block";
+            document.getElementById('homepage').style.animation = "FadeIn ease-in 10s";
+            document.getElementById('homepage').style.display = "block";
         }
 
         
